@@ -7,12 +7,27 @@
         <script src="script.js" defer></script> 
 		<title>Anastasia</title>
 	<body>
-        <form>
-            <p>Введите стоимость: <input id="a" type="text" value="Введи цену"></p>
-            <p>Введите количество: <input id="b" type="text" value="Введи кол-во"></p>
-            <p><input type="button" value="Результат" onclick="umn();"></p>
-        </form>
-        <hr>
-        <div id="result"></div>
+            <h2 class="text-center" id="calc">Калькулятор</h2>
+            Тип товара: 
+            <form>
+                <input type="text" id = "vibor" value="" placeholder="Количество">
+                <select name="type" id="select">    
+                    <option value="1" id="Vegetables">Овощи</option>
+                    <option value="2" id="Fruits">Фрукты</option>
+                    <option value="3" id="Berries">Ягоды</option>
+                </select>
+                <div id="Rradio">
+                    <input type="radio" name="Radiofru" id="whoiam"  onMouseDown="this.isChecked=this.checked;" onClick="this.checked=!this.isChecked; " />
+                    <input type="radio" name="Radiofru" value="Blueberry" onMouseDown="this.isChecked=this.checked;" onClick="this.checked=!this.isChecked;"/> Черника 
+                    <input type="radio" name="Radiofru" value="Cherry" onMouseDown="this.isChecked=this.checked;" onClick="this.checked=!this.isChecked;"/> Вишня 
+                    <input type="radio" name="Radiofru" value="Dates" onMouseDown="this.isChecked=this.checked;" onClick="this.checked=!this.isChecked;"/> Хурма 
+                </div>  
+                <div id="Elemm">
+                    <input type="checkbox" name="Banana" id="Banana" /> Банан 
+                    <input type="checkbox" name="Orange" id="Orange" /> Апельсин
+                    <input type="checkbox" name="Grape" id="Grape" /> Виноград      
+                </div>
+                <br/>
+                <h3 id="price"></h3> 
 	</body>
 </html>
